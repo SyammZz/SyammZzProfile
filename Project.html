@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Syams</title>
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0a1a49, #6ea5ff);
+            color: white;
+        }
+
+        .site-nav {
+            width: 100%;
+            padding: 14px 22px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(6px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+            z-index: 10;
+        }
+
+        .site-title { margin:0; color:white; font-size:28px; font-weight:700; }
+
+        .nav-links { display:flex; gap:16px; align-items:center; }
+
+        .nav-links a { color:white; text-decoration:none; font-weight:700; padding:10px 14px; border-radius:8px; font-size:16px; }
+
+        @media (max-width:520px) {
+            .site-nav { padding:10px 12px; }
+            .site-title { font-size:20px; }
+            .nav-links a { font-size:14px; padding:8px 10px; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            font-size: 38px;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        /* Card besar */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+            gap: 26px;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.13);
+            padding: 24px;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.33);
+            transition: 0.25s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.40);
+        }
+
+        .project-logo {
+            width: 90px;
+            height: 90px;
+            border-radius: 18px;
+            object-fit: cover;
+            background: rgba(255, 255, 255, 0.16);
+            padding: 8px;
+        }
+
+        .project-card h3 {
+            margin: 0 0 6px 0;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .project-card p {
+            margin: 0;
+            font-size: 16px;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="site-nav">
+        <h2 class="site-title">Syams</h2>
+        <div class="nav-links">
+            <a href="index.html">Profile</a>
+            <a href="Media.html">Media</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>My Project</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <a href="https://syammzz.github.io/SyammStore_ID/" target="_blank">
+                    <img src="Logo1.png" class="project-logo" alt="Project">
+                </a>
+                <div>
+                    <h3>SyammStore_ID</h3>
+                    <p>Tempat Jual Skin Berkualitas</p>
+                </div>
+            </div>
+
+        <div class="project-card">
+            <img src="logo2.png" class="project-logo" alt="Project">
+            <div>
+                <h3>Project 2</h3>
+                <p>Coming Soon...</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="logo3.png" class="project-logo" alt="Project">
+            <div>
+                <h3>Project 3</h3>
+                <p>Coming Soon...</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="logo4.png" class="project-logo" alt="Project">
+            <div>
+                <h3>Project 4</h3>
+                <p>Coming Soon...</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="logo5.png" class="project-logo" alt="Project">
+            <div>
+                <h3>Project 5</h3>
+                <p>Coming Soon...</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="logo6.png" class="project-logo" alt="Project">
+            <div>
+                <h3>Project 6</h3>
+                <p>Coming Soon...</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="logo7.png" class="project-logo" alt="Project">
+            <div>
+                <h3>Project 7</h3>
+                <p>Coming Soon...</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="logo8.png" class="project-logo" alt="Project">
+            <div>
+                <h3>Project 8</h3>
+                <p>Coming Soon...</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="logo9.png" class="project-logo" alt="Project">
+            <div>
+                <h3>Project 9</h3>
+                <p>Coming Soon...</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="logo10.png" class="project-logo" alt="Project">
+            <div>
+                <h3>Project 10</h3>
+                <p>Coming Soon...</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="logo11.png" class="project-logo" alt="Project">
+            <div>
+                <h3>Project 11</h3>
+                <p>Coming Soon...</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="logo12.png" class="project-logo" alt="Project">
+            <div>
+                <h3>Project 12</h3>
+                <p>Coming Soon...</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
